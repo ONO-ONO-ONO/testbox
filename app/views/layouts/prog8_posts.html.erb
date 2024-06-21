@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testbox</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <!-- 以下のリンクをlink_toメソッドを用いて変更してください -->
+        <!--<a href="/">TweetApp</a>-->
+        <%= link_to("TweetApp", "/prog8") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <!-- 以下のリンクをlink_toメソッドを用いて変更してください -->
+          <%= link_to("TweetAppとは", "/prog8/about") %>
+        </li>
+        <li>
+          <!-- ここにlink_toメソッドを用いて投稿一覧ページへのリンクを作成してください -->
+          <%= link_to("投稿一覧", "/prog8_posts") %>
+        </li>
+        <li>
+          <!-- ここにlink_toメソッドを用いて投稿一覧ページへのリンクを作成してください -->
+          <%= link_to("戻る", "/") %>
+        </li>
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>
