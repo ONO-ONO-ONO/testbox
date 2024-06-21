@@ -1,0 +1,33 @@
+<header>
+  <div class="header-logo">
+    <!--トップページへのリンクにしてください-->
+    <a href="/prog8">TweetApp</a>
+  </div>
+  <ul class="header-menus">
+    <li>
+      <!--サービス紹介ページへのリンクにしてください-->
+      <a href="/prog8/about">TweetAppとは</a>
+    </li>
+  </ul>
+</header>
+
+<%
+  posts = [
+    "今日からProgateでRailsの勉強するよー！",
+    "投稿一覧ページ作成中！",
+    "test"
+    ]
+%>
+
+<div class="main posts-index">
+  <div class="container">
+    <!-- 以下の<% %>を使ってeach文を追加してください -->
+    <% posts.each do |post| %>
+      <div class="posts-index-item">
+        <!-- 以下の<%= %>を使って投稿内容を表示してください -->
+        <%= post %>
+      </div>
+    <!-- 以下の<% %>を使ってeach文のendを追加してください -->
+    <% end %>
+  </div>
+</div>
