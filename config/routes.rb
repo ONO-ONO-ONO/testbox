@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # プロゲートのコピー
   get 'prog8' => "prog8#top"
   get 'prog8/about'
-  get 'prog8_posts' => "prog8_posts#index"
+  get 'prog8/posts' => "prog8#posts#index"
 
   # get 'help/imdex', to: 'help#imdex'
   get "help/imdex"  => "help#imdex"

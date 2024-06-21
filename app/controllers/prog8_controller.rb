@@ -4,4 +4,8 @@ class Prog8Controller < ApplicationController
   
   def about
   end
+
+  def posts
+    @posts = Prog8Post.all
+  end
 end
